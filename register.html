@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Register</h3>
+<p>SASMES</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="password">Password</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="office">Offices</label>
+    <select id="office" name="office">
+      <option value="OSA">OSA (Office of Student Affairs)</option>
+      <option value="ASO">ASO (Admission and Scholarship Office)</option>
+      <option value="LAVS">LAVS (Library and Audio-Visual Services)</option>
+      <option value="ArCu">ArCu (Arts and Culture)</option>
+      <option value="Sports">Sports</option>
+      <option value="Health">Health Services</option>
+      <option value="Registrar">Registrar</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

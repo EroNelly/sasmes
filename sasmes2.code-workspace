@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../pawtector"
+		},
+		{
+			"path": "../test"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sasmes2"
+	}
+}

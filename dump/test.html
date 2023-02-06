@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardcont {
+  padding: 0 16px;
+  text-align: center;
+}
+
+.cardcont::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive "Meet The Team" Section</h2>
+<p>Resize the browser window to see the effect.</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="ustp.png" alt="osa" style="width:100%">
+      <div class="cardcont">
+        <h2>Office of  Student Affairs</h2>
+        <p><button class="button">Proceed</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ustp.png" alt="aso" style="width:100%">
+      <div class="cardcont">
+        <h2>Admission and Scholarship Offices</h2>
+        <p><button class="button">Proceed</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="ustp.png" alt="lavs" style="width:100%">
+      <div class="cardcont">
+        <h2>Library and Audio-Visual Services</h2>
+        <p><button class="button">Proceed</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="ustp.png" alt="arcu" style="width:100%">
+      <div class="cardcont">
+        <h2>Arts and Culture</h2>
+        <p><button class="button">Proceed</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ustp.png" alt="sports" style="width:100%">
+      <div class="cardcont">
+        <h2>Sports</h2>
+        <p><button class="button">Proceed</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ustp.png" alt="health" style="width:100%">
+      <div class="cardcont">
+        <h2>Health Services</h2>
+        <p><button class="button">Proceed</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ustp.png" alt="registrar" style="width:100%">
+      <div class="cardcont">
+        <h2>Registrar</h2>
+        <p><button class="button">Proceed</button></p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
